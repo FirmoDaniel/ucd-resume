@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700'); /*here we have take the font robot and specified the weights we want 100,200,300. etc*/
+/*Exo is the second font we selected using the same link but separating them with the pipe '|' (shift+backslash)*/
+
+
+/*-------------------------------------COLORS */
+
+.bg-color-name-title{
+    background-color: #676767;
+}
+
+.ui-menu-color-home{
+    background-color: #e67e22;
+}
+
+.ui-menu-color-resume{
+    background-color: #9b59b6;
+}
+
+.ui-menu-color-contact{
+    background-color: #3498db;
+}
+
+.ui-menu-color-download{
+    background-color: #525252;
+}
+
+
+
+/*--------------------------------------HEADING*/
+
+header{
+        margin: 0;
+}
+
+.heading{ /*this isn't working for some reason. I added the M-L50 direct to .name and .title*/
+    margin-left: 50px;
+}
+
+.logo{
+    background: url("../images/rosie.jpg"); /*double dots bring us out of the css folder into assest and then into images for rosie*/
+    background-position: center;
+    background-repeat: no-repeat; /*so the image doesn't repeat, it only shows once*/
+    background-size: cover; /* so the image covers it's specified container*/
+    min-height: 360px; /*this height will be used as a total for three sub setcions next to it, each at 120px - rule of thirds*/
+    transition: all .5s ease-in-out; /* this is the animation when the page loads*/
+    -moz-transition: all .5s ease-in-out; /*mozz and webkit are prefixed to ensure the animation works in all browsers*/
+    -webkit-transition: all .5s ease-in-out;
+    
+}
+
+.name{ /*here we are styling the name in the header*/
+    font-family: "Exo", sans-serif;
+    font-weight: 100;
+    font-size: 46px;
+    margin-top: 50px;
+    color: #fff;
+    margin-left: 50px; /*added*/
+}
+
+.title{
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    color: #fff;
+    margin-left: 50px; /* added*/
+
+}
+
+.list-inline-item:not(:last-child) { /*here we are overriding a class built into bootstrap found in the dev tools*/
+    margin: 0;
+}
+
+.menucontainer{ /*reduce font size to 0 to fix white space but now we can't see out font. so we now target the nav id to apply new rules such as font-size 14px*/
+    font-size: 0;
+
+}
+
+#nav li{
+    font-size: 14px;
+    padding: 0;
+
+}
