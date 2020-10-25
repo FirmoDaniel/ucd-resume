@@ -123,7 +123,7 @@ header{
 /*--------------------------------------HOVER.CSS*/   /*rewatch last video*/
 
 /*in devtools the class is called hvr-sweep-to-bottom:before. here we are fixing the out of alignment that showed up when we added the hover*/
-/*.hvr-sweep-to-bottom:before {
+.hvr-sweep-to-bottom:before {
 background-color: rgba(0,0,0,0.2);
 height: 120px;
 
