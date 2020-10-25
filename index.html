@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" />">
     <title>Rosie</title>
 </head>
 <body>
@@ -22,17 +23,17 @@
                 <div class="row no-gutters">
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer"> <!--makes the list display horizontally rather than default vertically. menucontainer added to stop white space between inline-->
-                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item"> <!--this means it will be 4 cols wide when displayed in anything bigger than a small screen, and two cols when in mobile/small screen-->
-                                <a href="#"><span>Home</span></a>
+                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem"> <!--this means it will be 4 cols wide when displayed in anything bigger than a small screen, and two cols when in mobile/small screen-->
+                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a> <!--aria-hdden means scren readers will ignore the image-->
                             </li>
-                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item"> 
-                                <a href="#"><span>Resume</span></a>
+                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem"> 
+                                <a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
                             </li>
-                             <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item">
-                                <a href="#"><span>Contact</span></a>
+                             <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
+                                <a href="#"><i class="fa fa-comment" aria-hidden="true"></i><span>Contact</span></a>
                             </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item">
-                                <a href="#"><span>Download</span></a>
+                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
+                                <a href="#"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
                             </li>
                        </ul>
                     </div>

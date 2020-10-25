@@ -41,7 +41,7 @@ header{
     background-position: center;
     background-repeat: no-repeat; /*so the image doesn't repeat, it only shows once*/
     background-size: cover; /* so the image covers it's specified container*/
-    min-height: 360px; /*this height will be used as a total for three sub setcions next to it, each at 120px - rule of thirds*/
+    min-height: 360px; /*this height will be used as a total for three sub setcions next to it, each at 120px - rule of thirds!  see menuitem class below */
     transition: all .5s ease-in-out; /* this is the animation when the page loads*/
     -moz-transition: all .5s ease-in-out; /*mozz and webkit are prefixed to ensure the animation works in all browsers*/
     -webkit-transition: all .5s ease-in-out;
@@ -77,8 +77,54 @@ header{
 
 }
 
+#nav{
+    margin: 0;
+
+}
+
 #nav li{
     font-size: 14px;
     padding: 0;
+
+}
+
+.menuitem{
+    height: 120px;
+    text-align: center;
+    padding: 0;
+
+}
+
+.menuitem a{ /*here we target the 'a' children of the menuitem class in our list items*/
+    width: 100%; /*makes the entire area of the div clickable*/
+    text-decoration: none;
+    color: #fff;
+    height: 120px;
+}
+
+.menuitem a i{ /*targeting the 'i / icon' child of our 'a' tags within the menuitem class in our list items*/
+    padding-top: 22px;
+    display:block; /* this moves the icon to it's own line on top of the text inside the span*/
+    color: #fafafa;
+    font-size: 26px;
+}
+
+.menuitem span{
+    display:block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/*--------------------------------------HOVER.CSS*/
+
+/*in devtools the class is called hvr-sweep-to-bottom:before. here we are fixing the out of alignment that showed up when we added the hover*/
+/*.hvr-sweep-to-bottom:before {
+background-color: rgba(0,0,0,0.2);
+height: 120px;
 
 }
