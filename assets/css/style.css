@@ -24,6 +24,27 @@
     background-color: #525252;
 }
 
+/*--------------------------------------Special Paddings/Margins/Text*/ 
+
+h1,h2,h3,h4{
+    margin: 0;
+}
+
+.uppercase{
+    text-transform: uppercase;
+    
+}
+
+.general-sub{
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.inline-block{
+    display: inline-block;
+
+}
 
 
 /*--------------------------------------HEADING*/
@@ -128,4 +149,14 @@ header{
 .menuitem .hvr-sweep-to-bottom:before{ /*added more specificity using .menuitem*/
  background: rgba(0,0,0,0.2); /*color not working with original code*/
 height: 120px;   
+}
+
+/*--------------------------------------FOOTER*/
+
+footer{
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;  /*the height will default to 120px but can be pushed higher if needs be*/
+    margin: 0;
+
 }
