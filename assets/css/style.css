@@ -251,3 +251,66 @@ footer{
     margin-bottom: 15px;
 
 }
+
+/*--------------------------------------PERSONAL INFO*/
+
+.personal-info-item{ /*before we added this the items were under one another, we want them to be side by side*/
+    margin-bottom: 20px;
+    display: block;
+    clear: both; /*so no other items appear beside it*/
+    
+}
+
+.personal-info-item .key,
+.personal-info-item .value{ /*targeting multiple classes*/
+        padding-right: 8px;
+        display: inline-block;
+
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p{
+    margin: 0;
+
+}
+
+.personal-info-item .key{
+    width: 20%; /*changed to 25% from 30% to keep email inside the page*/
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top; /*so this hugs the top of the div as much as possible*/
+}
+
+.personal-info-item .key p{
+    font-weight: 700;
+
+}
+
+.personal-info-item .value{
+    position: relative;
+    width: 60%;
+
+}
+
+/*--------------------------------------SKILLS*/
+
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+    
+}
+
+.progress-type {
+    position: absolute; /*this make the text sit on top of the progress bar instead of to the right */
+    left: 0px;
+    font-weight: 400;
+    padding: 3px 30px 2px 10px; /*top, right, bottom, left*/
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+}
+
+.progress-section{
+    margin: 40px 20px; /*40 top and bottom, 20 left and right*/
+
+}

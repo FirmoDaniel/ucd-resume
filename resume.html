@@ -24,7 +24,7 @@
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer"> <!--makes the list display horizontally rather than default vertically. menucontainer added to stop white space between inline-->
                             <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem"> <!--this means it will be 4 cols wide when displayed in anything bigger than a small screen, and two cols when in mobile/small screen-->
-                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a> <!--aria-hdden means scren readers will ignore the image-->
+                                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a> <!--aria-hdden means scren readers will ignore the image-->
                             </li>
                              <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem"> 
                                 <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
@@ -41,8 +41,93 @@
             </div>
         </div>
     </header>
-    <section>
-    
+<section class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 bg-color-personal-info section-colum">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading uppercase">
+                            Work History                       
+                        </h3>
+                    </div>    
+                </div>  
+            </div>
+           <div class="col-md-8 bg-color-three-reasons section-column"> <!--Section-column specifies the use of a table cell which provides evenly sized columns in terms of height-->
+                <div class="row">
+                    <div class="col">
+                         <h3 class="section-heading uppercase">My Skills</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6"> <!--on mobile this will have 10 cols with an offset on either side. on sm it will have 3 cols, md/desktop will have 2 cols-->
+                        <div class="row">
+                            <div class="col2">
+                                <i class="three-reasons-icon fas fa-tv" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Front End</h4>
+                                <p>
+                                   I'm skilled in user Experience Design using the trinity of HTML/CSS/Javascript. 
+                                   I also have extensive experience in Front End Frameworks such as Angular
+                                   and React.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>   
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col2">
+                                <i class="three-reasons-icon fas fa-cogs" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Back End</h4>
+                                <p>
+                                    I specialize in data-driven web applications. Many of my projects utilise 
+                                    document -based data. I use Python and Dkango in conjuction with MangoDB
+                                    to process and present information. 
+                                </p>
+                            </div>
+
+                        </div>
+                    </div> 
+                </div>
+                <div class="row progress-section">
+                    <div class="col">
+                        <div class="progress"> <!--for the progress bars pulled from bootsrap. rosie is saying she is 90% proficent in html/html5-->
+                           <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;"> 
+                                <span class="sr-only">90% complete</span>
+                           </div> 
+                           <span class="progress-type">HTML / HTML5</span>
+                        </div>
+                        <div class="progress"> 
+                           <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;"> <!--added bg-success to change color of the progress bar-->
+                                <span class="sr-only">80% complete</span>
+                           </div> 
+                           <span class="progress-type">CSS / CSS3</span>
+                        </div> 
+                        <div class="progress"> 
+                           <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+                                <span class="sr-only">70% complete</span>
+                           </div> 
+                           <span class="progress-type">JavaScript / jQuery</span>
+                        </div> 
+                        <div class="progress"> 
+                           <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+                                <span class="sr-only">80% complete</span>
+                           </div> 
+                           <span class="progress-type">Django / Phyton</span>
+                        </div> 
+                        <div class="progress"> 
+                           <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+                                <span class="sr-only">80% complete</span>
+                           </div> 
+                           <span class="progress-type">SQL / NoSQL</span>
+                        </div> 
+                    </div>
+                </div>
+           </div>
+        </div>
     </section>
      <footer class="container-fluid">
         <div id="footer-details" class="row">
