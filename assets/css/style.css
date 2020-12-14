@@ -405,6 +405,8 @@ button[type="submit"] { /*targeting a specific button with an specific element *
 
 }
 
+div#map {min-height: 360px;}
+
 /*-------------------------------------MEDIA QUERY */
 
 @media(min-width: 992px) { /*takes affect whne the screen is 992px or greater. NOTICE WE'RE APPLYING THESE CHAGES TO AN EXISTING CLASS ABOVE [CENTER-FORM]*/
